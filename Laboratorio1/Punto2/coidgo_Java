@@ -1,0 +1,19 @@
+
+ 
+//code from https://masqueprogramar.wordpress.com/2016/12/29/fibonacci-iterativo/
+
+public class FibonacciIterativo {
+ 
+    public static void main(String[] args) {
+ 
+    	long n1 = 0;
+    	long  n2 = 1;
+    	long  limite = 94;  
+        
+        for( int i = 0; i < limite - 1; i++ ){
+            n2 = (long) (n1 + n2);
+            n1 = (long) (n2 - n1);
+            System.out.print( n2 + "\n" );
+        }
+    }
+}
